@@ -22,19 +22,13 @@ h1 {
   border-radius: 0.75rem;
 }
 
-.hearts::before,
-.diamonds::before,
-.spades::before,
-.clubs::before {
+.card::before {
   position: absolute;
   top: -2.5rem;
   left: 10px;
 }
 
-.hearts::after,
-.diamonds::after,
-.spades::after,
-.clubs::after {
+.card::after {
   position: absolute;
   bottom: -2.5rem;
   right: 10px;
