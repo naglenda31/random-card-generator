@@ -1,1 +1,81 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-image: url("https://static.impalastudios.com/images/background/background-Solitaire-1463061812-2000x2000.png");
+  height: 100vh;
+  font-family: "Slackey", cursive;
+  font-size: 100px;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+.d-flex {
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 0.75rem;
+}
+
+.hearts::before,
+.diamonds::before,
+.spades::before,
+.clubs::before {
+  position: absolute;
+  top: -2.5rem;
+  left: 10px;
+}
+
+.hearts::after,
+.diamonds::after,
+.spades::after,
+.clubs::after {
+  position: absolute;
+  bottom: -2.5rem;
+  right: 10px;
+  transform: scaleY(-1);
+}
+
+.hearts::before,
+.hearts::after,
+.diamonds::before,
+.diamonds::after {
+  color: red;
+}
+.spades::before,
+.spades::after,
+.clubs::before,
+.clubs::after {
+  color: black;
+}
+
+.hearts::before,
+.hearts::after {
+  content: "\2665";
+}
+
+.diamonds::before,
+.diamonds::after {
+  content: "\2666";
+}
+
+.spades::before,
+.spades::after {
+  content: "\2660";
+}
+
+.clubs::before,
+.clubs::after {
+  content: "\2663";
+}
+
+.btn {
+  font-size: 18px;
+  border-radius: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
